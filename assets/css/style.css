@@ -73,6 +73,9 @@ h1, h2, h3, h4, h5, h6 {
   background: #040b14;
   overflow-y: auto;
 }
+
+
+
 #header .profile img {
   margin: 15px auto;
   display: block;
@@ -80,18 +83,23 @@ h1, h2, h3, h4, h5, h6 {
   border: 8px solid #2c2f3f;
 }
 #header .profile h1 {
-  font-size: 24px;
+  font-size: 40px;
   margin: 0;
   padding: 0;
   font-weight: 600;
   -moz-text-align-last: center;
   text-align-last: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Road Rage", sans-serif;
+  color: white;
+  text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+  transform: rotate(-7deg);
 }
+
 #header .profile h1 a, #header .profile h1 a:hover {
-  color: #fff;
+  color: #FF3131;
   text-decoration: none;
 }
+/*
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
@@ -111,6 +119,31 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   text-decoration: none;
 }
+*/
+#header .profile .social-links a{
+  font-size: 18px;
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+#header .profile .social-links a:hover{
+  background: #556DC8;
+  color: #050801;
+  box-shadow: 0 0 5px #A653F5,
+        0 0 25px #A653F5,
+        0 0 50px #A653F5,
+        0 0 200px #A653F5;
+}
+
 
 #main {
   margin-left: 300px;
@@ -150,17 +183,55 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   font-size: 15px;
 }
+
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.nav-menu a span{
+  text-transform: uppercase;
+  /*
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  */
+  background-image: linear-gradient(
+    -225deg,
+    #A653F5 0%,
+    #8F8CF2 29%,
+    #65B8BF 67%,
+    #F96CFF 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+} 
+
 .nav-menu a i, .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
-  color: #6f7180;
+  color: #E68E36;
 }
 .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
   text-decoration: none;
   color: #fff;
 }
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
-  color: #149ddd;
+  color: #DD517F;
 }
 
 /* Mobile Navigation */
@@ -217,24 +288,35 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 300px;
 }
 #hero h1 {
+  font-family: 'Retro Signature', sans-serif;                      
   margin: 0 0 10px 0;
-  font-size: 64px;
-  font-weight: 700;
+  font-size: 150px;
+  font-weight: 7000;
   line-height: 56px;
   color: #fff;
 }
 #hero p {
+  font-family: 'Retrolight', sans-serif;
   color: #fff;
   margin-bottom: 50px;
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-size: 40px;
 }
 #hero p span {
-  color: #fff;
+  color: #65B8BF;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #CEA2D7;
+  
+  margin: 0px;
+  color: #F975F7 ;
+  transform:rotate(-15deg);
+  -ms-transform:rotate(-15deg); /* IE 9 */
+  -webkit-transform:rotate(-15deg); /* Safari and Chrome */
+  -webkit-text-stroke: 1px #f008b7;
+  -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
+  z-index: 20;
 }
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -268,13 +350,37 @@ section {
   padding-bottom: 30px;
 }
 .section-title h2 {
+  font-family: 'Kelvinized', sans-serif;                                    
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: transparent;
+	text-transform: uppercase;
+	transform: translatey(25px);
+	background: linear-gradient(
+		cornflowerblue 30%,
+		white,
+		darkmagenta 60%,
+		cornflowerblue 100%
+	);
+	background-size: contain;
+	-webkit-background-clip: text;
+	-webkit-text-stroke: 1px silver;
+	filter: drop-shadow(5px 5px 1px black) drop-shadow(1px 1px 1px magenta);
+	animation: bg-shift 0.5s ease-in-out infinite alternate;
 }
+
+@keyframes bg-shift {
+	0% {
+		background-position: 0 -25px;
+	}
+	100% {
+		background-position: 0 25px;
+	}
+}
+
 .section-title h2::after {
   content: "";
   position: absolute;
@@ -285,6 +391,7 @@ section {
   bottom: 0;
   left: 0;
 }
+
 .section-title p {
   margin-bottom: 0;
 }
