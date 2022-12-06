@@ -402,7 +402,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #17696c;
 }
 .about .content ul {
   list-style: none;
@@ -520,8 +520,8 @@ section {
 # Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
+  font-family: 'Retrolight', sans-serif;
   font-size: 26px;
-  font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #050d18;
@@ -529,15 +529,14 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #64CFF7;
   position: relative;
 }
 .resume .resume-item h4 {
   line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Road Rage', sans-serif;
   color: #050d18;
   margin-bottom: 10px;
 }
@@ -567,7 +566,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #e4a18c;
 }
 
 /*--------------------------------------------------------------
