@@ -739,10 +739,10 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
   color: white;
   background-color: black;
 }
+
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
 }

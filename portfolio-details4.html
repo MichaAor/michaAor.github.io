@@ -45,7 +45,7 @@
 <body>
 
 	<!-- ======= Mobile nav toggle button ======= -->
-	<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+	<i class="bi bi-list mobile-nav-toggle d-xl-none" style="color: #E68E36; background-color: #461E52;"></i>
 
 	<!-- ======= Header ======= -->
 	<header id="header">
@@ -87,12 +87,12 @@
 
 	<main id="main">
 
-		<!-- ======= Breadcrumbs ======= 
+		<!-- ======= Breadcrumbs =======
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>SARH</h2>
+          <h2>Another Message App</h2>
           <ol>
             <li><a href="index.html">Inicio</a></li>
             <li>Portfoio Details</li>
@@ -107,84 +107,125 @@
 			<div class="container">
 
 				<div class="row gy-4">
-
-					<div class="col-lg-8">
+					<div class="col">
 						<div class="portfolio-details-slider swiper">
 							<div class="swiper-wrapper align-items-center">
 								<div class="swiper-slide">
-									<img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
+									<img src="assets/img/portfolio/details/spring1PD1.gif" alt="">
 								</div>
 								<div class="swiper-slide">
-									<img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
+									<img src="assets/img/portfolio/details/spring1PD2.gif" alt="">
 								</div>
 								<div class="swiper-slide">
-									<img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+									<img src="assets/img/portfolio/details/spring1PD3.gif" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="assets/img/portfolio/details/spring1PD3.gif" alt="">
 								</div>
 							</div>
 							<div class="swiper-pagination"></div>
 						</div>
 					</div>
 
-					<div class="col-lg-4">
-						<div class="portfolio-info">
-							<h3>Sistema de Administracion de Reservas (SARH)</h3>
-							<ul>
-								<li><strong>Category</strong>: Console App</li>
-								<li><strong>Client</strong>: UTN</li>
-								<li><strong>Finish Date</strong>: 18 de Junio de 2021</li>
-								<li><strong>URL</strong>:
-									<a href="https://github.com/Agusampa/Administracion-de-Hotel"
-										class="github" target="_blank" rel="noopener noreferrer"><i
-										class="bx bxl-github"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
 					<div class="portfolio-description">
 						<div class="section-title">
 							<h2>Details</h2>
 						</div>
-						<p>
-							<ul>
-								<li><i class='bx bx-play'></i>
-									Console App desarrollada para llevar a cabo la gestion de las reservas correspondientes a un
-									hotel (o varios),lo mas destacable es la gran cantidad de validaciones que el CRUD contiene en todo el
-									significado de sus siglas.
-								</li>
-								<li><i class='bx bx-play'></i>
-									Diversos CRUD son usados para administrar a los usuarios, las reservas,
-									los roles de seguridad jerarquica del sistema, las habitaciones asi como tambien la
-									contabilidad de esta y los gastos correspondientes del cliente.
-								</li>
-								<li><i class='bx bx-play'></i>
-									Segun la prediccion del grupo el proyecto tiene potencial de combinar funcionalidades
-									tanto para uso escritorio en muchos hoteles y a la vez en una app mobile para el 
-									uso directo de los usuarios.
-								</li>
-							</ul>
-						</p>
+						<div class="row">
+							<div class="col-lg-8">
+								<div class="container-fluid">
+									<ul>
+										<li>
+											<i class='bx bx-play'></i>Web App inspirada en Airbnb con el proposito de brindar
+											alojamiento a mascotas a cambio de una remuneracion.
+										</li>
+										<li>
+											<i class='bx bx-play'></i>La estructura del proyecto esta definida en
+											Arquitectura MVC, con componentes Model, DAO y Controller para distribucion de views. 
+											Adicionalmente de la implementacion de un Framework dispuesto por la catedra.
+										</li>
+										<li>
+											<i class='bx bx-play'></i>Posee restricciones a las diversas vistas mediante autenticacion 
+											de session y su rol, sea Keeper u Owner. En caso de no cumplir con ninguna solo permite 
+											visualizacion del home y de una parcial vista individual de una publicacion.
+										</li>
+										<li>
+											<i class='bx bx-play'></i>Para el acceso a las diversas funcionalidades como pueden ser
+											la peticion de una reserva, paneles de keeper u owner, chat directo y dejar reseña estan 
+											limitados a como minimo poseer una cuenta en el sistema.
+										</li>
+										<li>
+											<i class='bx bx-play'></i>Para la elaboracion de publicaciones y recepcion de reservas
+											se debe conserguir el role de keeper, el cual ademas permite el acceso a varias funcionalidades mas.
+										</li>
+										<li>
+											<i class='bx bx-play'></i>El proyecto tuvo un desarrollo estimado de 1 mes, bajo metodologia SCRUM,
+											dividido en 4 sprints de 1 semana cada uno. Utilizando Trello como tablero de tareas y pendientes.
+										</li>
+										<li>
+											<i class='bx bx-play'></i>Entre la documentacion de la aplicacion se encuentran DER,UML CD & UC, asi como
+											un informe detallado junto con la narrativa.
+										</li>
+										<li>
+											<i class='bx bx-play'></i>DATO ADICIONAL: El proyecto envia un mail mediante phpMailer luego de concretar una reserva,
+											asi como emite un checker en PDF en caso de requerirlo con DomPDF.
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="container-fluid">
+									<div class="portfolio-info">
+										<h3>Pet Hero</h3>
+										<ul>
+											<li><strong>Category</strong>: Web App</li>
+											<li><strong>Client</strong>: UTN</li>
+											<li><strong>Finish Date</strong>: 21 de Noviembre de 2022</li>
+											<li><strong>URL</strong>:
+												<a href="https://github.com/nachoq22/Pet-Hero"
+													class="github" target="_blank" rel="noopener noreferrer"><i
+														class="bx bxl-github"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
 						<div class="row skills-content">
 							<div class="section-title">
 								<h2>Skills</h2>
 							</div>
 							<div class="row row-cols-sm-5 row-cols-sm-4 g-2 g-3" data-aos="fade-up">
 								<div class="col-sm col-sm">
+										<div class="p-3">
+											<img src="./assets/img/icons/php.png" alt="Icono de Java" class="img-fluid">
+											<p class="text-center">PHP</p>
+										</div>
+									</div>
+								<div class="col-sm col-sm">
 									<div class="p-3">
-										<img src="./assets/img/icons/java.png" alt="Icono de Java" class="img-fluid">
-										<p class="text-center">Java</p>
+										<img src="./assets/img/icons/Html5.png" alt="Icono de Java" class="img-fluid">
+										<p class="text-center">HTML5</p>
 									</div>
 								</div>
 								<div class="col-sm col-sm">
 									<div class="p-3">
-										<img src="./assets/img/icons/Gson.png" alt="Icono de Java" class="img-fluid">
-										<p class="text-center">Gson</p>
+										<img src="./assets/img/icons/CSS3.png" alt="Icono de Java" class="img-fluid">
+										<p class="text-center">CSS3</p>
 									</div>
 								</div>
 								<div class="col-sm col-sm">
 									<div class="p-3">
-										<img src="./assets/img/icons/json.png" alt="Icono de Java" class="img-fluid">
-										<p class="text-center">Json</p>
+										<img src="./assets/img/icons/Bootstrap.png" alt="Icono de Java"
+											class="img-fluid">
+										<p class="text-center">Bootstrap</p>
+									</div>
+								</div>
+								<div class="col-sm col-sm">
+									<div class="p-3">
+										<img src="./assets/img/icons/mysql.png" alt="Icono de Java" class="img-fluid">
+										<p class="text-center">MySQL</p>
 									</div>
 								</div>
 								<div class="col-sm col-sm">
@@ -203,6 +244,12 @@
 									<div class="p-3">
 										<img src="./assets/img/icons/Trello.png" alt="Icono de Java" class="img-fluid">
 										<p class="text-center">Trello</p>
+									</div>
+								</div>
+								<div class="col-sm col-sm">
+									<div class="p-3">
+										<img src="./assets/img/icons/SCRUM.png" alt="Icono de Java" class="img-fluid">
+										<p class="text-center">SCRUM</p>
 									</div>
 								</div>
 							</div>
@@ -229,8 +276,9 @@
 		</div>
 	</footer><!-- End  Footer -->
 
-	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-			class="bi bi-arrow-up-short"></i></a>
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center" style="background-color: #461E52;" >
+		<i class="bi bi-arrow-up-short" style="color: #E68E36; "></i>
+	</a>
 
 	<!-- Vendor JS Files -->
 	<script src="assets/vendor/purecounter/purecounter.js"></script>
