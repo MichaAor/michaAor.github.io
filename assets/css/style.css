@@ -11,6 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  background-color: black;
 }
 
 a {
@@ -338,12 +339,12 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  /*padding: 50px 0;*/
   overflow: hidden;
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: #000000;
 }
 
 .section-title {
@@ -404,6 +405,10 @@ section {
   font-size: 26px;
   color: #17696c;
 }
+.about .content{
+  color: white;
+}
+
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -425,6 +430,40 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
 }
+
+.about .container-fluid{
+  text-align: center;
+}
+.about .container-fluid h2{
+  font-family: 'Retro Signature', sans-serif;    
+  font-size: 100px;
+}
+.about .container-fluid a i{
+  font-size: 18px;
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border: 0.4vh solid transparent;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.about .container-fluid a i:hover{
+  background: #64CFF7;
+  color: #64CFF7;
+  box-shadow: 0 0 5px #FA92FB,
+        0 0 25px  #FA92FB,
+        0 0 50px #FA92FB,
+        0 0 200px #FA92FB;
+}
+
+
 
 /*--------------------------------------------------------------
 # Facts
@@ -539,8 +578,10 @@ section {
   display: inline-block;
 }
 
+
 .skills p{
   font-family: 'Retrolight', sans-serif;
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -551,7 +592,7 @@ section {
   font-size: 26px;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: #ffffff;
 }
 .resume .resume-item {
   padding: 0 0 20px 20px;
@@ -559,26 +600,36 @@ section {
   border-left: 2px solid #64CFF7;
   position: relative;
 }
+.resume .resume-item p{
+  color: white;
+}
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 20px;
   text-transform: uppercase;
   font-family: 'Road Rage', sans-serif;
-  color: #050d18;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #DEFFFA;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
+.resume .resume-item ul li ul li{
+  background-color: black;
+}
+
 .resume .resume-item ul {
+  color: white;
   padding-left: 20px;
 }
 .resume .resume-item ul li {
+  color: white;
   padding-bottom: 10px;
 }
 .resume .resume-item:last-child {
@@ -592,7 +643,7 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
+  background: #FA92FB;
   border: 2px solid #e4a18c;
 }
 
@@ -607,7 +658,7 @@ section {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: #B0E1FF;
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -624,7 +675,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #FF68A8;
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -689,6 +740,8 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+  color: white;
+  background-color: black;
 }
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
