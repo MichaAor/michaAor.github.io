@@ -472,7 +472,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .grid-container {
   display: grid;
@@ -514,6 +514,33 @@ section {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+}
+
+.skills .container h2{
+  font-family: 'Road rage', sans-serif;
+  font-size: 40px;  
+  background-image: linear-gradient(
+    -225deg,
+    #e7e4f9 0%, 
+    #44259a 29%,
+    #2e2c9a 41%,
+    #eec8ed 67%,
+    #2e158a 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+.skills p{
+  font-family: 'Retrolight', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -610,7 +637,7 @@ section {
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  background: #15071e76;
   position: absolute;
   left: 0;
   right: 0;
@@ -635,12 +662,12 @@ section {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.75);
+  background: #2e2c9a;
   transition: 0.3s;
   width: 50%;
 }
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: #E68E36;
 }
 .portfolio .portfolio-wrap .portfolio-links a + a {
   border-left: 1px solid #37b3ed;
@@ -682,7 +709,7 @@ section {
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+  box-shadow: 0px 0 30px rgba(18, 108, 234, 0.08);
 }
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
