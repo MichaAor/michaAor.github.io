@@ -419,7 +419,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #eec8ed;
   line-height: 0;
 }
 .about .content p:last-child {
@@ -1114,6 +1114,7 @@ section {
   font-size: 13px;
   color: #eaebf0;
 }
+
 @media (max-width: 1199px) {
   #footer {
     position: static;
