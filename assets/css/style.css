@@ -431,12 +431,12 @@ section {
   margin-bottom: 0;
 }
 
-.about .container-fluid{
+.about .col-lg {
   text-align: center;
 }
-.about .container-fluid h2{
+.about .col-lg  h2{
   font-family: 'Retro Signature', sans-serif;    
-  font-size: 100px;
+  font-size: 90px;
 }
 .about .container-fluid a i{
   font-size: 18px;
