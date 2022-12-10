@@ -607,7 +607,7 @@ section {
   line-height: 18px;
   font-size: 20px;
   text-transform: uppercase;
-  font-family: 'Road Rage', sans-serif;
+  font-family: 'QUALIFIED GOOD', sans-serif;                                                                                
   color: #ffffff;
   margin-bottom: 10px;
 }
@@ -632,6 +632,12 @@ section {
   color: white;
   padding-bottom: 10px;
 }
+
+.resume .resume-item ul li strong{
+  font-family: 'ZX Spectrum7 Bold', sans-serif;
+  font-size: 25px;
+}
+
 .resume .resume-item:last-child {
   padding-bottom: 0;
 }
